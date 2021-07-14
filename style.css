@@ -7,16 +7,20 @@ body{
    background-color:  #e9f0f7;
 }
 
-/*------------------------- container --------------------------------*/
+
+
+
+
+/*------------------------- Top-section--------------------------------*/
 
 
 
     
 
 .top-section{
-    display: flex;
+   display: flex;
    background-color: rgb(15, 15, 158);
-  width: 100%;
+   width: 100%;
    height: 677px;
   
   
@@ -44,27 +48,108 @@ body{
 /*---------------------------------------------------------------------------------------------
 ------------------------- Top-players ---------------------------
 ---------------------------------------------------------------------------------------------*/
+
+.container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
 .top-players{
     
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    margin: 70px 250px 70px 210px;
+    width: 1050px;
     grid-row-gap:27px ;
     grid-column-gap: 30px;
-    width:1050px;
-   
-    
-   
-    
+    align-items: center;
+    margin-top: 10px;
 }
 .player{
     border:10px;
     background-color:#FFFFFF;
     padding: 15px;
     box-shadow: 4px 3px 8px 12px hsl(0, 20%, 94%);
+    display: flex;
+    flex-direction: column;
     
 }
 .player img{
     width: 300px;
     height: 256px;
 }
+
+/*------------------------------------------------------------------------------
+------------------------------------ footer-------------------------------------
+----------------------------------------------------------------------------- */
+
+
+/*------------------------------------------
+                          mobile-devi
+    -------------------------------------------------------------------*/
+
+@media only screen and (max-width:688px){
+    .top-section{
+        
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    .top-title{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+    .top-banner img{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+    
+    
+
+    .top-players{
+
+        width:100%;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+    }
+    
+
+}
+
+/*------------------------------------------
+                            tablet-devices
+    -------------------------------------------------------------------*/
+
+    @media only screen and (min-width:689px)and(max-width:992px){
+        .top-section{
+            
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+        }
+        .top-title{
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
+        .top-banner img{
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
+        
+    
+        .top-players{
+    
+            width:100%;
+            grid-template-columns: repeat(2,1fr);
+            justify-content: center;
+        }
+        
+    
+    }
+    
