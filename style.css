@@ -4,7 +4,7 @@
 /*--------------------------- body------------------------------------------ */
 body{
     font-family: 'Poppins', sans-serif;
-   background-color:  #e9f0f7;
+   background-color: #FFFFFF;
 }
 
 
@@ -82,13 +82,13 @@ body{
 }
 
 
-/*------------------------------ match-details------------------------------------------------------------ */
+/*------------------------------highlights------------------------------------------------------------ */
 .match-details{
     display:flex;
 
 
 }
-.description{
+.description {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -121,6 +121,45 @@ height: 44px;
 .button p{
     margin-right: 8px;
 }
+
+/*================================================== final-moment=========================================== */
+
+
+.final-moment{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+   
+}
+.wining-moment {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 466px;
+    height: 309px;
+    
+    margin-right:69px;
+
+
+}
+.vedio{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 466px;
+    height: 309px;
+    margin-top: 224px;
+    margin-right:69px;
+
+}
+.final-moment img{
+
+    width: 467px;
+    height: 327px;
+}
+
 
 
 
@@ -175,7 +214,7 @@ height: 44px;
         height: 100%;
         width: 100%;
         padding-left: 15px;
-        padding-right: ;
+        
     }
     .top-title{
         height: 100%;
@@ -198,8 +237,8 @@ height: 44px;
   
     .top-banner img{
         width: 329px;
-height: 259.17px;
-       margin-left:0px;
+        height: 259.17px;
+        margin-left:0px;
          margin-top: 50px;
     }
     
@@ -239,6 +278,33 @@ height: 259.17px;
         width: 100%;
         margin-top: 29px;
     }
+
+    /* final-moment----------------------------------------------------------- */
+    .final-moment{
+        flex-direction: column;
+        height: 100%;
+        width: 100%; 
+        margin-left: 15px;
+      
+        
+    }
+    .wining-moment{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+    .wining-moment img{
+        height: 100%;
+        width: 100%;
+       
+    }
+    iframe{
+        height: 100%;
+        width: 100%; 
+    }
+
+
+   
      /* foter -----------------------------*/
 
      
