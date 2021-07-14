@@ -81,17 +81,63 @@ body{
     height: 256px;
 }
 
+
+/*------------------------------ match-details------------------------------------------------------------ */
+.match-details{
+    display:flex;
+
+
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 466px;
+    height: 309px;
+    margin-top: 224px;
+    margin-right:69px;
+
+}
+
+
+.match-image img{
+ width: 567px;
+height: 427px;
+margin-top:165px;
+}
+
+.button{
+display: flex;
+width: 173px;
+height: 44px;
+background: #E02C6D;
+align-items: center;
+padding: 10px 24px;
+width: 173px;
+height: 44px;
+}
+.button p{
+    margin-right: 8px;
+}
+
+
+
+
 /*------------------------------------------------------------------------------
 ------------------------------------ footer-------------------------------------
 ----------------------------------------------------------------------------- */
 
 
 /*------------------------------------------
-                          mobile-devi
+                          mobile-device
     -------------------------------------------------------------------*/
 
 @media only screen and (max-width:688px){
-    .top-section{
+
+
+    /* top-section -----------------------------------------*/
+    .top-section  {
         
         flex-direction: column;
         height: 100%;
@@ -108,7 +154,7 @@ body{
         margin: 0;
     }
     
-    
+    /* top-players--------------------------------------- */
 
     .top-players{
 
@@ -116,40 +162,35 @@ body{
         grid-template-columns: repeat(1,1fr);
         justify-content: center;
     }
-    
 
+    /* .match-details------------------------------------------- */
+
+    .match-details{
+        flex-direction: column;
+        height: 100%;
+        width: 100%; 
+    }
+    .description{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+    .match-image img{
+        height: 100%;
+        width: 100%;
+        margin-top: 29px;
+    }
+
+
+    
 }
 
-/*------------------------------------------
-                            tablet-devices
-    -------------------------------------------------------------------*/
+    
+    
 
-    @media only screen and (min-width:689px)and(max-width:992px){
-        .top-section{
-            
-            flex-direction: column;
-            height: 100%;
-            width: 100%;
-        }
-        .top-title{
-            height: 100%;
-            width: 100%;
-            margin: 0;
-        }
-        .top-banner img{
-            height: 100%;
-            width: 100%;
-            margin: 0;
-        }
-        
-    
-        .top-players{
-    
-            width:100%;
-            grid-template-columns: repeat(2,1fr);
-            justify-content: center;
-        }
-        
-    
-    }
-    
+
+
+
+
+
+
