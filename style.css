@@ -85,6 +85,7 @@ body{
 /*------------------------------highlights------------------------------------------------------------ */
 .match-details{
     display:flex;
+    
 
 
 }
@@ -97,6 +98,7 @@ body{
     height: 309px;
     margin-top: 224px;
     margin-right:69px;
+    
 
 }
 
@@ -116,6 +118,13 @@ align-items: center;
 padding: 10px 24px;
 width: 173px;
 height: 44px;
+
+
+}
+.button:hover{
+    transform: scale(1.1);
+    color: white;
+    overflow: hidden;
 
 }
 .button p{
@@ -143,6 +152,19 @@ height: 44px;
 
 
 }
+.wining-moment:hover .article{
+
+    display: block;
+    color: #FFFFFf;
+    background-color: rgb(15, 14, 15);
+}
+.article{
+    position: absolute;
+    display: none;
+    width: 466px; 
+    
+    
+}
 .vedio{
     display: flex;
     flex-direction: column;
@@ -158,6 +180,7 @@ height: 44px;
 
     width: 467px;
     height: 327px;
+    position: relative;
 }
 
 
@@ -284,7 +307,8 @@ height: 44px;
         flex-direction: column;
         height: 100%;
         width: 100%; 
-        margin-left: 15px;
+        margin-left: 5px;
+
       
         
     }
@@ -297,6 +321,9 @@ height: 44px;
         height: 100%;
         width: 100%;
        
+    }
+    .article{
+        width:100%;
     }
     iframe{
         height: 100%;
